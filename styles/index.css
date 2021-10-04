@@ -1,31 +1,53 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-h1{
-    text-align: center;
-    color: rgb(241, 241, 58);
+h1 {
+  text-align: center;
+  color: rgb(241, 241, 58);
 }
-#container{
-    display: grid;
-    grid-template-columns: 500px 500px 500px;
-}
-.robot{
-    height:300px;
-    margin:5px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgb(162, 163, 89);
-    background-color: bisque;
-}
-img{
-    text-align: center;
-    width:fit-content;
+#container {
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
 }
 
-.robot:hover{
-    height: 350px;
-    background-color: white;
-    transition: .2s;
-    margin: 8px;
-    box-shadow: 3px 3px 3px 3px rgb(162, 163, 89);
-    
+.robo-heading {
+  animation: headingStyle 4s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes headingStyle {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(0.4);
+  }
+
+  50% {
+    transform: scale(0.6);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.robot {
+  height: 300px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(162, 163, 89);
+  background-color: bisque;
+}
+img {
+  text-align: center;
+  width: fit-content;
+}
+
+.robot:hover {
+  height: 350px;
+  background-color: white;
+  transition: 0.2s;
+  margin: 8px;
+  box-shadow: 3px 3px 3px 3px rgb(162, 163, 89);
 }
