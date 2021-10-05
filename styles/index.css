@@ -1,3 +1,35 @@
+h1{
+    text-align: center;
+    color: beige;
+}
+#container{
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    justify-content: center;
+}
+.robot{
+    height:300px;
+    margin:5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px grey;
+    background-color: bisque;
+}
+img{
+    text-align: center;
+    width:fit-content;
+}
+h3{
+    color: blueviolet;
+    margin: 3% auto;
+    text-align: center;
+}
+.robot:hover{
+    height: 350px;
+    background-color: white;
+    transition: .3s;
+    margin: 8px;
+    box-shadow: 3px 3px 3px 3px grey;
+}
 body {
   background-color: black;
 }
