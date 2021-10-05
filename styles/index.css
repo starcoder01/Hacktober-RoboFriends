@@ -50,5 +50,32 @@ img {
   transition: 0.2s;
   margin: 8px;
   box-shadow: 3px 3px 3px 3px rgb(162, 163, 89);
+  padding: 20px;
+  color: orange;
+  background-image: linear-gradient(to right, yellow, white, yellow);
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.robot {
+  width: 30%;
+  height: 300px;
+  margin: 20px 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(162, 163, 89);
+  background-color: bisque;
+}
+img {
+  text-align: center;
+  width: fit-content;
 }
 
+.robot:hover {
+  transform: scale(1.02);
+  background-color: white;
+  transition: 0.2s;
+  margin: 8px;
+  box-shadow: 0px 0px 15px rgb(162, 163, 89);
+}
