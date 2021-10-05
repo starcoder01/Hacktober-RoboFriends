@@ -1,31 +1,34 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-h1{
-    text-align: center;
-    color: rgb(241, 241, 58);
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: orange;
+  background-image: linear-gradient(to right, yellow, white, yellow);
 }
-#container{
-    display: grid;
-    grid-template-columns: 500px 500px 500px;
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.robot{
-    height:300px;
-    margin:5px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgb(162, 163, 89);
-    background-color: bisque;
+.robot {
+  width: 30%;
+  height: 300px;
+  margin: 20px 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(162, 163, 89);
+  background-color: bisque;
 }
-img{
-    text-align: center;
-    width:fit-content;
+img {
+  text-align: center;
+  width: fit-content;
 }
 
-.robot:hover{
-    height: 350px;
-    background-color: white;
-    transition: .2s;
-    margin: 8px;
-    box-shadow: 3px 3px 3px 3px rgb(162, 163, 89);
-    
+.robot:hover {
+  transform: scale(1.02);
+  background-color: white;
+  transition: 0.2s;
+  margin: 8px;
+  box-shadow: 0px 0px 15px rgb(162, 163, 89);
 }
