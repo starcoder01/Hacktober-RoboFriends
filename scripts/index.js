@@ -28,7 +28,6 @@ var robots = [{
 }]
 
 var container = document.getElementById("container");
-
 robots.forEach(element => {
     container.innerHTML += `
         <div class="card">
@@ -39,3 +38,4 @@ robots.forEach(element => {
         </div>
     `
 });
+
